@@ -1,0 +1,15 @@
+Package: CTGovData
+Type: Package
+Title: Get all raw data from ClinicalTrial.GOV as of March 2016
+Version: 0.1.0.9000
+Date: 2016-07-04
+Authors@R: person("Rishi", "Solanki", email = "rsolanki@seas.upenn.edu", role = c("aut", "cre"))
+Description: This package contains datasets from ClinicalTrials.GOV viz.
+  Trial data (NCT_ID, Title, Enrollment, Phase, etc.)
+  Location data (NCT_ID, Facility Location)
+  Sponsor data (NCT_ID, Sponsors)
+  Condition data (NCT_ID, Disease / Primary condition)
+  Package is developed with an intention of ease of access to trials information for data analysis.
+License: What license is it under?
+LazyData: TRUE
+RoxygenNote: 5.0.1.9000
