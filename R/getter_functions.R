@@ -34,7 +34,7 @@ read_location_data <- function(){
 #' @export
 #'
 read_condition_data <- function(){
-  return(conddition_table)
+  return(condition_table)
 }
 
 
