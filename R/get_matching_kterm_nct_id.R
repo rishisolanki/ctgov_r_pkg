@@ -3,7 +3,6 @@
 #' @return A list of matching NCT_ID
 #' @export
 #'
-
 get_matching_kterm_nct_id <- function(kterm){
 
   condition_data <- read_condition_data()
