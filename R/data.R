@@ -49,7 +49,7 @@
 "raw_clinical_study_table"
 
 
-#' Raw Clinical Trial Data
+#' Processed Clinical Trial Data
 #'
 #' Contains data from ClinicaTials.GOV (per NCT_ID)
 #'
