@@ -1,5 +1,5 @@
 
-#' Read Clinical Trial Info
+#' Read Raw Clinical Trial Info
 #'
 #' Returns a data frame consisting of 211437 values and  42 variables:
 #'
@@ -7,9 +7,23 @@
 #'
 #' @export
 #'
-read_clinical_data <- function(){
-   return(clinical_study_table)
+read_raw_clinical_data <- function(){
+   return(raw_clinical_study_table)
 }
+
+
+#' Read Processed Clinical Trial Info
+#'
+#' Returns a data frame consisting of 211437 values and  12 variables:
+#'
+#' @param None
+#'
+#' @export
+#'
+read_processed_clinical_data <- function(){
+  return(processed_clinical_study_table)
+}
+
 
 
 #' Read Clinical Trial Location Info
