@@ -1,6 +1,6 @@
 #' Get clinical trial data by matching specific NCT_ID for the specific kterm
 #' @param kterm A string representing a disease name or primary condition
-#' @output list
+#' @return Clinical trial processed table only specific to the kterm
 #' @export
 
 search_clinical_trial <- function(kterm){
@@ -11,7 +11,10 @@ search_clinical_trial <- function(kterm){
   colnames(match_nct_id) <- "NCT_ID"
 
   # get specific clinical trial data
-  output <- merge(match_nct_id,data0,by.x = "NCT_ID", by.y = "NCT_ID")
+  output <- merge(match_nct_id,
+                  data0,
+                  by.x = "NCT_ID",
+                  by.y = "NCT_ID")
 
   return(output)
 }
