@@ -11,5 +11,9 @@ Description: This package contains datasets from ClinicalTrials.GOV viz.
   Condition data (NCT_ID, Disease / Primary condition)
   Package is developed with an intention of ease of access to trials information for data analysis.
 License: What license is it under?
+Imports:
+    plyr,
+    zoo,
+    maps
 LazyData: TRUE
 RoxygenNote: 5.0.1.9000
