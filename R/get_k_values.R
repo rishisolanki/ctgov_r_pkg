@@ -8,6 +8,20 @@
 #' @export
 
 get_k_value <- function(location, kterm="", start_date, end_date, phase=""){
+    require(zoo)
+
+    if(location == ""){
+      stop("Please enter a location")
+    }
+
+    if(start_date == "" | end_date == ""){
+      stop("Please check start and end date")
+    }
+
+    if(is.na(as.yearmon(start_date)) | is.na(as.yearmon(end_date))){
+      stop ("Please enter dates in MM YYYY format i.e Jan 2012")
+    }
+
 
     if(kterm == ""){
     d1 = read_processed_clinical_data()
