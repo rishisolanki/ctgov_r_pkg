@@ -9,6 +9,9 @@ search_clinical_trial(kterm)
 \arguments{
 \item{kterm}{A string representing a disease name or primary condition}
 }
+\value{
+Clinical trial processed table only specific to the kterm
+}
 \description{
 Get clinical trial data by matching specific NCT_ID for the specific kterm
 }
