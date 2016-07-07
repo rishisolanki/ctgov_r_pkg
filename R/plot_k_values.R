@@ -9,6 +9,7 @@
 #' @export
 #'
 plot_k_values <- function(get_k_value_op, start_date, end_date, kterm = "", location = ""){
+  require(zoo)
 
   if(get_k_value_op == ""){
     stop("Please enter a correct input parameters")
@@ -21,6 +22,7 @@ plot_k_values <- function(get_k_value_op, start_date, end_date, kterm = "", loca
   if(is.na(as.yearmon(start_date)) | is.na(as.yearmon(end_date))){
     stop ("Please enter dates in MM YYYY format i.e Jan 2012")
   }
+
   p1 <- get_k_value_op
   p <- append(0,p1) # append zero because step function reduces length by 1
   sfunP <- stepfun(1:(length(p)-1),p,f=0)
