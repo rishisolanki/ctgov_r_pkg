@@ -3,7 +3,7 @@
 #' @param kterm Disease or primary condition under observation. Default is blank
 #' @param start_date e.g. Jan 2012
 #' @param end_date e.g. March 2013
-#' @phase 0 for Phase 0, Phase 1, Phase 1/Phase 2, Phase 2 and 1 for Phase 3, Phase 4 and Phase 2/Phase 3. Default is blank
+#' @param phase 0 for Phase 0, Phase 1, Phase 1/Phase 2, Phase 2 and 1 for Phase 3, Phase 4 and Phase 2/Phase 3. Default is blank
 #' @return A list containing count of trials in operation per month between start and end date
 #' @export
 
