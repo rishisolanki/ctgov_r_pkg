@@ -11,7 +11,7 @@ get_k_value <- function(location, kterm="", start_date, end_date, phase=""){
     require(zoo)
 
     if(location == ""){
-      stop("Please enter a location")
+      stop("Please enter a correct location")
     }
 
     if(start_date == "" | end_date == ""){
